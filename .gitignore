@@ -25,6 +25,3 @@ pnpm-debug.log*
 
 # temporary files
 text.txt
-
-# package lock files
-package-lock.json
