@@ -4,7 +4,7 @@ body {
   color: #f5f5f5;
   background:
     linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)),
-    url("/logo.png") center top / contain no-repeat fixed,
+    var(--bg-logo, url("/logo.png")) center top / contain no-repeat fixed,
     #000;
 }
 
