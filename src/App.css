@@ -8,6 +8,17 @@ body {
     #000;
 }
 
+/* Mobile browsers often ignore fixed backgrounds; fall back to scroll to avoid jitter */
+@media (max-width: 768px) {
+  body {
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)),
+      var(--bg-logo, url("/logo.png")) center top / contain no-repeat,
+      #000;
+    background-attachment: scroll;
+  }
+}
+
 /* HEADER */
 .header {
   display: flex;
