@@ -1,4 +1,6 @@
 function Hero() {
+  const sponsorPage = `${import.meta.env.BASE_URL}sponsor.html`;
+
   return (
     <section className="hero" id="hem">
       <div className="hero-text">
@@ -11,7 +13,7 @@ function Hero() {
         <p className="hero-meta">Baserade i Gävle, Sverige.</p>
         <div className="hero-actions">
           <a className="cta-btn" href="#spela">Anmäl dig som spelare</a>
-          <a className="ghost-btn" href="#sponsor">Bli sponsor</a>
+          <a className="ghost-btn" href={sponsorPage}>Bli sponsor</a>
         </div>
       </div>
     </section>

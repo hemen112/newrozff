@@ -4,25 +4,69 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Newroz FF – Om oss</title>
+  <link rel="icon" type="image/png" href="./logo.png" />
   <style>
+    :root {
+      color-scheme: dark;
+      --yellow: #ffdd00;
+      --bg: #0b0b0b;
+      --card: rgba(255, 255, 255, 0.08);
+    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       color: #f5f5f5;
-      background:
-        linear-gradient(rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.82)),
-        url("./logo.png") center top / contain no-repeat fixed,
-        #000;
+      background: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), url("./logo.png") center top / contain no-repeat, var(--bg);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
-    .page {
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 22px;
+      background: rgba(0, 0, 0, 0.7);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+    }
+    .brand img { height: 50px; }
+    .cta-btn, .ghost-btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      margin-top: 10px;
+      border: 1px solid var(--yellow);
+    }
+    .cta-btn { background: var(--yellow); color: #000; }
+    .cta-btn:hover { background: #ffcc00; }
+    .ghost-btn { color: var(--yellow); background: transparent; }
+    .ghost-btn:hover { background: rgba(255, 221, 0, 0.1); }
+    main {
       max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px 60px;
+      margin: 40px auto;
+      padding: 0 16px 60px;
+      width: 100%;
+      flex: 1;
     }
-    h1, h2, h3 {
-      margin: 0 0 12px;
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 14px;
+      padding: 28px 24px;
+      box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
     }
-    h1 { text-align: center; margin-bottom: 24px; }
+    h1 { margin: 0 0 12px; font-size: 32px; }
+    h2 { margin: 24px 0 10px; }
     p {
       line-height: 1.6;
       margin: 0 0 14px;
@@ -32,47 +76,43 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
       font-size: 14px;
-      color: #ffdd00;
+      color: var(--yellow);
       margin: 0 0 6px;
-    }
-    .card {
-      padding: 28px 24px;
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: 12px;
-      border: 1px solid rgba(255, 255, 255, 0.16);
-      box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
     }
     ul {
       padding-left: 20px;
       margin: 0 0 16px;
     }
-    .cta {
-      display: inline-block;
-      margin-top: 18px;
-      padding: 12px 22px;
-      background: #ffdd00;
-      color: #000;
-      font-weight: 700;
-      text-decoration: none;
-      border-radius: 8px;
-      border: 1px solid #ffdd00;
+    footer {
+      text-align: center;
+      color: #d0d0d0;
+      padding: 20px 0 40px;
+      margin-top: auto;
     }
-    .cta:hover { background: #ffcc00; }
   </style>
 </head>
 <body>
-  <div class="page">
-    <h1>Om Newroz FF</h1>
+  <header>
+    <a class="brand" href="./">
+      <img src="./logo.png" alt="Newroz FF" />
+      <span>Newroz FF</span>
+    </a>
+    <a class="ghost-btn" href="./">Tillbaka till startsidan</a>
+  </header>
 
-    <h2>🌟 Vad är NewrozFF?</h2>
-    <p>
-      Newroz FF är en ideell fotbollsförening baserad i Gävle som erbjuder vuxna
-      en positiv och utvecklande fotbollsmiljö. Vi välkomnar spelare från alla
-      bakgrunder – från nybörjare till avancerade – och vill skapa en trygg plats
-      där alla kan växa på och utanför planen.
-    </p>
+  <main>
+    <section class="card">
+      <p class="eyebrow">Vår vision</p>
+      <h1>Om Newroz FF</h1>
 
-    <div class="card">
+      <h2>🌟 Vad är NewrozFF?</h2>
+      <p>
+        Newroz FF är en ideell fotbollsförening baserad i Gävle som erbjuder vuxna
+        en positiv och utvecklande fotbollsmiljö. Vi välkomnar spelare från alla
+        bakgrunder – från nybörjare till avancerade – och vill skapa en trygg plats
+        där alla kan växa på och utanför planen.
+      </p>
+
       <h2>🎯 Vår inriktning</h2>
       <ul>
         <li>Erbjuda kvalitativa fotbollsträningar</li>
@@ -107,9 +147,9 @@
       <p>
         Vi vill att varje person som tränar med oss ska känna sig välkommen, stöttad och delaktig.
       </p>
-    </div>
+    </section>
+  </main>
 
-    <a class="cta" href="./index.html">Tillbaka till startsidan</a>
-  </div>
+  <footer>© 2025 Newroz FF – Alla rättigheter reserverade.</footer>
 </body>
 </html>
