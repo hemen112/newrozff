@@ -31,7 +31,10 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build
+        # Use root base (/) for the custom domain (newrozff.se). For the default
+        # GitHub Pages project URL you can switch this to "/newrozff/".
+        run: |
+          VITE_BASE="/" npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
