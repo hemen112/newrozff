@@ -17,10 +17,20 @@
         margin: 0;
         font-family: Arial, sans-serif;
         color: #f5f5f5;
-        background: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), url("./logo.png") center top / contain no-repeat, var(--bg);
+        background: var(--bg);
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+        position: relative;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), url("./logo.png") center top / contain no-repeat, var(--bg);
+        z-index: -1;
+        transform: translateZ(0);
       }
       header {
         display: flex;
