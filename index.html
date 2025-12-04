@@ -2,8 +2,13 @@
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
-    <!-- Use a relative path so it works in dev (/) and GitHub Pages (/newrozff/) -->
-    <link rel="icon" type="image/png" href="./logo.png" />
+    <!-- Set favicon to match Vite base (dev: /, Pages: /newrozff/) -->
+    <link rel="icon" type="image/png" id="favicon" href="./logo.png" />
+    <script type="module">
+      const base = import.meta.env?.BASE_URL ?? "/";
+      const el = document.getElementById("favicon");
+      if (el) el.href = `${base}logo.png`;
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Newroz FF – Officiell Hemsida</title>
   </head>
