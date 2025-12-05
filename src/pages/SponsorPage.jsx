@@ -4,7 +4,7 @@ import { navigate } from "../utils/navigation";
 
 function SponsorPage() {
   return (
-    <>
+    <div className="page-shell">
       <Header />
       <main className="section">
         <div className="section-content card">
@@ -19,48 +19,41 @@ function SponsorPage() {
                   src={`${import.meta.env.BASE_URL}${sponsor.logo}`}
                   alt={sponsor.name}
                   className="sponsor-logo"
+                  onClick={() =>
+                    window.open(sponsor.url, "_blank", "noopener,noreferrer")
+                  }
+                  style={{ cursor: "pointer" }}
                 />
-                <div>
-                  <a
-                    className="ghost-btn"
-                    href={sponsor.url}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {sponsor.cta}
-                  </a>
-                </div>
+                <div />
               </div>
+
             ))}
           </div>
 
-          <div style={{ marginTop: 18 }}>
-            {/* Buttons placed outside card for clearer layout */}
-            <div style={{ display: "flex", flexDirection: "column", gap: 10, marginTop: 10 }}>
-              <a
-                className="cta-btn"
-                href={sponsorsContent.cta.url}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {sponsorsContent.cta.label}
-              </a>
-              <a
-                className="ghost-btn"
-                href={`${import.meta.env.BASE_URL}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  navigate("");
-                }}
-              >
-                Tillbaka till startsidan
-              </a>
-            </div>
+          <div className="sponsor-actions">
+            <a
+              className="cta-btn"
+              href={sponsorsContent.cta.url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {sponsorsContent.cta.label}
+            </a>
+            <a
+              className="ghost-btn"
+              href={`${import.meta.env.BASE_URL}`}
+              onClick={(e) => {
+                e.preventDefault();
+                navigate("");
+              }}
+            >
+              Tillbaka till startsidan
+            </a>
           </div>
         </div>
       </main>
       <footer className="footer">© 2025 Newroz FF – Alla rättigheter reserverade.</footer>
-    </>
+    </div>
   );
 }
 
