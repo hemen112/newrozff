@@ -5,6 +5,7 @@ function Header() {
   const logoSrc = `${import.meta.env.BASE_URL}logo.png`;
   const sponsorPage = `${import.meta.env.BASE_URL}sponsor`;
   const visionPage = `${import.meta.env.BASE_URL}vision`;
+  const eventsPage = `${import.meta.env.BASE_URL}events`;
 
   return (
     <header className="header">
@@ -15,6 +16,7 @@ function Header() {
       <nav>
         <a href="#hem" onClick={(e) => { e.preventDefault(); navigateToSection("hem"); }}>Hem</a>
         <a href={visionPage} onClick={(e) => { e.preventDefault(); navigate("vision"); }}>Vision</a>
+        <a href={eventsPage} onClick={(e) => { e.preventDefault(); navigate("events"); }}>Events</a>
         <a href={sponsorPage} onClick={(e) => { e.preventDefault(); navigate("sponsor"); }}>Sponsorer</a>
         <a href="#kontakt" onClick={(e) => { e.preventDefault(); navigateToSection("kontakt"); }}>Kontakt</a>
       </nav>

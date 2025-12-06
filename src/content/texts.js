@@ -86,3 +86,21 @@ export const sponsorsContent = {
     url: "https://forms.gle/gUmuUztPnSSb14AC7",
   },
 };
+
+export const backButton = "Tillbaka till startsidan";
+export const webRights = "© 2025 Newroz FF – Alla rättigheter reserverade.";
+
+export const eventsContent = {
+  intro: "Kommande evenemang för NewrozFF. Häng med på matcher, träningar och klubbkvällar.",
+  items: [
+    {
+      title: "Mindre turnering – Sörby IP",
+      date: "20 december 2025 kl 18:00",
+      description: "Vi kör en mindre turnering på Sörby IP. Mer info kommer."
+    }
+  ],
+  cta: {
+    label: "Anmäl dig till nästa event",
+    url: "https://forms.gle/qcGaHpMzmjL5Aqzq7"
+  }
+};

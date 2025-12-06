@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import SponsorPage from './pages/SponsorPage.jsx'
 import VisionPage from './pages/VisionPage.jsx'
+import EventsPage from './pages/EventsPage.jsx'
 import './App.css'
 
 const getRoute = () => {
@@ -13,6 +14,7 @@ const getRoute = () => {
     .replace(/\.html$/, '');
   if (path === 'sponsor') return 'sponsor';
   if (path === 'vision' || path === 'lang') return 'vision';
+  if (path === 'events') return 'events';
   return 'home';
 };
 
@@ -31,6 +33,7 @@ function Router() {
 
   if (route === 'sponsor') return <SponsorPage />;
   if (route === 'vision') return <VisionPage />;
+  if (route === 'events') return <EventsPage />;
   return <App />;
 }
 
