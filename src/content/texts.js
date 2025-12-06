@@ -86,3 +86,7 @@ export const sponsorsContent = {
     url: "https://forms.gle/gUmuUztPnSSb14AC7",
   },
 };
+
+export const backButton = "Tillbaka till startsidan";
+
+export const webRights = "© 2025 Newroz FF – Alla rättigheter reserverade.";

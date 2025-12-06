@@ -4,6 +4,7 @@ import App from './App.jsx'
 import SponsorPage from './pages/SponsorPage.jsx'
 import VisionPage from './pages/VisionPage.jsx'
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const getRoute = () => {
   const base = import.meta.env.BASE_URL.replace(/\/$/, '');
