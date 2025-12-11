@@ -13,7 +13,7 @@ function Contact() {
           <p className="social-heading">Följ oss</p>
           <a
             className="social-link"
-            href="#"
+            href="https://www.instagram.com/newrozff/?utm_source=ig_web_button_share_sheet"
             aria-label="Instagram"
             target="_blank"
             rel="noreferrer"
