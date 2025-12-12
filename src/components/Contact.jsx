@@ -6,7 +6,16 @@ function Contact() {
         <h2>Hör av dig</h2>
         <ul className="contact-list">
           <li>
-            <span className="contact-label">📧</span> kontakt.newrozff@gmail.com
+            <span className="contact-label">📧</span>{" "}
+            <a href="mailto:kontakt.newrozff@gmail.com" className="contact-link">
+              kontakt.newrozff@gmail.com
+            </a>
+          </li>
+          <li>
+            <span className="contact-label">📱</span>{" "}
+            <a href="tel:+46732346453" className="contact-link">
+              +46 73 234 64 53
+            </a>
           </li>
         </ul>
         <div className="social-links">
@@ -22,7 +31,9 @@ function Contact() {
               <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7Zm5 3.5A3.5 3.5 0 1 1 8.5 12 3.5 3.5 0 0 1 12 8.5Zm0 2A1.5 1.5 0 1 0 13.5 12 1.5 1.5 0 0 0 12 10.5Zm4.25-3.4a.85.85 0 1 1-.85.85.85.85 0 0 1 .85-.85Z" />
             </svg>
           </a>
-          <a
+          {/* Facebook link removed as per recent edits */}
+          {/*
+            <a
             className="social-link"
             href="#"
             aria-label="Facebook"
@@ -33,6 +44,7 @@ function Contact() {
               <path d="M13.5 10.5V8.75c0-.76.18-1.15 1.48-1.15H16V5h-1.7C11.7 5 10.5 6.06 10.5 8.24v2.26H9v2.6h1.5V19h3v-3.9H16l.25-2.6h-2.75Z" />
             </svg>
           </a>
+          */}
           <a
             className="social-link"
             href="https://whatsapp.com/channel/0029VbAlZ89GU3BN8iviKz2U"

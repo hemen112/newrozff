@@ -248,6 +248,17 @@ nav a:hover {
   background: rgba(255, 221, 0, 0.1);
 }
 
+.contact-link {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-link:hover {
+  color: #ffdd00;
+  text-decoration: underline;
+}
+
 .footer {
   background: rgba(0, 0, 0, 0.7);
   color: white;
