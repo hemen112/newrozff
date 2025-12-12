@@ -95,8 +95,11 @@ export const eventsContent = {
   items: [
     {
       title: "Mindre turnering – Sörby IP",
-      date: "20 december 2025 kl 18:00",
-      description: "Vi kör en mindre turnering på Sörby IP. Mer info kommer."
+      date: "20 december 2025 kl 18:30 (första matchen 19:00)",
+      description:
+        "NewrozFF firar kurdiska flaggans dag med en kväll fylld av fotboll, glädje och gemenskap. Fyra lag från Gävle och Sandviken spelar flera matcher, det är öppet för alla åldrar och barn får popcorn vid entrén – ta med vänner och familj!",
+      image: "event20251220.jpeg",
+      imageAlt: "Affisch: NewrozFF firar kurdiska flaggans dag"
     }
   ],
   cta: {

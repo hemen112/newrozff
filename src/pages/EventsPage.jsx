@@ -19,6 +19,15 @@ function EventsPage() {
                   <h3 className="h5 fw-bold">{event.title}</h3>
                   <p className="mb-1"><strong>{event.date}</strong></p>
                   <p className="mb-0">{event.description}</p>
+                  {event.image && (
+                    <div className="event-image-wrap">
+                      <img
+                        src={`${import.meta.env.BASE_URL}${event.image}`}
+                        alt={event.imageAlt || event.title}
+                        className="event-image"
+                      />
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
